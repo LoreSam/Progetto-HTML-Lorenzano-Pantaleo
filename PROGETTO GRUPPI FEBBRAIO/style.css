@@ -1,78 +1,102 @@
-body{
-    margin: 0 auto;
-}
-
-#container{
-    height: 51px;
-    margin: 0 auto;
-}
-
-#container > nav {
-    width: 100%;
-    position: fixed;
-    display: block;
-    padding-bottom: 1%;
-    background-color: #171615;
-}
-
-#nav1 {
-    width: 40%;
-    float: left;
-    text-align: center;
-    color: white;
-    font-weight: bold;
-    font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
-}
-
-#nav1 > div{
-    display: inline;
-}
-
-#nav2 {
-    width: 20%;
-    float: left;
-}
-
-#nav2 > img{
-
-}
-
-#nav3 {
-    width: 40%;
-    border-right: 300px;
-    text-align: right;
-    float: left;
-}
-
-#after-nav{
-    clear: both;
-    height: 1000px;
-}
-
-/*.bottone{
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 1rem 1.5rem;
-    min-width: 9.3rem;
-    height: 3.125rem;
-    border-width: 0 0 0.25rem;
-    background: var(--green-vanilla-01);
-    border: 0.125rem solid var(--black-02);
-    font-family: "Noto Sans";
-    font-style: normal;
-    font-weight: 800;
-    font-size: 1.125rem;
-    line-height: 1.25rem;
-    color: var(--white-01);
-    letter-spacing: .03rem;
-    text-transform: uppercase;
-    cursor: pointer;
-    pointer-events: all;
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
     margin: 0;
-    outline: 0;
-    text-shadow: var(--text-shadow-vanilla-01);
-    box-shadow: var(--box-shadow-vanilla-01);
+    padding: 0;
+    background-color: #1c1c1c; /* Grigio scuro di sfondo */
+    color: #fff; /* Colore del testo principale */
+}
+
+header {
+    background-color: #121212; /* Grigio scuro per l'header */
+    color: #fff;
+    padding: 15px;
+}
+
+nav {
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+/*
+.logo {
+    position: absolute;
+    top: 15px;
+    left: 10px;
+    display: inline-block;
+    background-image: url('steam-logo.png');
+    width: 40px;
+    height: 40px;
+    background-size: cover;
 }*/
+
+.person-icon {
+    position: absolute;
+    top: 15px;
+    right: 10px;
+    display: inline-block;
+    background-image: url('person-icon.png'); 
+    width: 20px;
+    height: 20px;
+    background-size: cover;
+}
+
+.hero {
+    background-image: url('hero-background.jpg');
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+    padding: 100px;
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.button {
+    display: inline-block;
+    background-color: #007aff; /* Blu scuro per i pulsanti */
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.featured-games {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px;
+}
+
+.game {
+    text-align: center;
+}
+
+.game img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.footer {
+    background-color: #292929; /* Grigio scuro per il footer */
+    padding: 20px;
+    text-align: center;
+}
