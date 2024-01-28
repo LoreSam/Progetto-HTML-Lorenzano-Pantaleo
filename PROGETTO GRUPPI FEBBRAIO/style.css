@@ -2,37 +2,39 @@ body {
     font-family: 'Helvetica Neue', Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #1c1c1c; /* Grigio scuro di sfondo */
     color: #fff; /* Colore del testo principale */
 }
 
-header {
-    background-color: #121212; /* Grigio scuro per l'header */
+.nav-head {
+    background-color: rgba(22, 22, 23, .8); /* Grigio scuro per l'header */
     color: #fff;
     padding: 15px;
+    position: fixed;
+    width: 100%;
+    top: 0;
 }
 
-nav {
+.nav-head nav {
     text-align: center;
 }
 
-nav ul {
+.nav-head nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
 }
 
-nav ul li {
+.nav-head nav ul li {
     display: inline-block;
     margin-right: 20px;
 }
 
-nav a {
+.nav-head nav a {
     text-decoration: none;
     color: #fff;
     font-weight: bold;
 }
-/*
+
 .logo {
     position: absolute;
     top: 15px;
@@ -42,12 +44,12 @@ nav a {
     width: 40px;
     height: 40px;
     background-size: cover;
-}*/
+}
 
 .person-icon {
     position: absolute;
     top: 15px;
-    right: 10px;
+    right: 30px;
     display: inline-block;
     background-image: url('person-icon.png'); 
     width: 20px;
@@ -56,8 +58,7 @@ nav a {
 }
 
 .hero {
-    background-image: url('hero-background.jpg');
-    background-size: cover;
+    background-color: black;
     color: #fff;
     text-align: center;
     padding: 100px;
@@ -95,8 +96,4 @@ nav a {
     margin-bottom: 10px;
 }
 
-.footer {
-    background-color: #292929; /* Grigio scuro per il footer */
-    padding: 20px;
-    text-align: center;
-}
+
