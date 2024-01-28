@@ -5,6 +5,10 @@ body {
     color: #fff; /* Colore del testo principale */
 }
 
+.nero{
+    background-color: black ;
+}
+
 .nav-head {
     background-color: rgba(22, 22, 23, .8); /* Grigio scuro per l'header */
     color: #fff;
@@ -89,6 +93,26 @@ body {
     margin-bottom: 20px;
 }
 
+.centro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.hero {
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding-top: 50px;
+    overflow-x: hidden;
+}
+
+.giochi-evidenza h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
 .contenuto{
     position: relative;
     transition: transform 0.5s ease;
@@ -119,6 +143,10 @@ body {
 
 .nascosto {
     left: 100%; /* Inizialmente nascosto alla destra */
+}
+
+.but1{
+    width: 20%;
 }
 
 .button {
