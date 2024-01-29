@@ -38,14 +38,25 @@
                     <img src="immagini/fh5.jpg">
                 </div>
             </div>
+            <div class="altro-contenuto nascosto">
+                <h1>Forza Horizon 5</h1>
+                <div class="cod">
+                    <img src="immagini/fh5.jpg">
+                </div>
+            </div>
         </div>
         <button class="freccia freccia-dx" onclick="cambiaPagina(1)"><i class="fas fa-chevron-right"></i></button>
     </div>
-    <div style="height: 1000px;">a</div>
+    <div>
+        <div class="fc-live">
+            <p>LIVE ORA</p>
+            <h1>EA FC 24</h1>
+        </div>
+    </div>
 
     <script>
         var paginaCorrente = 1;
-        var numPagine = 2;
+        var numPagine = 5;
 
         function cambiaPagina(delta) {
             paginaCorrente += delta;
@@ -68,11 +79,7 @@
                 altroContenuto.classList.add('nascosto');
             }
         }
-
-
-
     </script>
-
 
 </body>
 

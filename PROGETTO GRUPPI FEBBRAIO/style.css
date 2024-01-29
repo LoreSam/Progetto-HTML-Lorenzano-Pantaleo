@@ -16,6 +16,7 @@ body {
     position: fixed;
     width: 100%;
     top: 0;
+    z-index: 2;
 }
 
 .nav-head nav {
@@ -48,6 +49,7 @@ body {
     width: 40px;
     height: 40px;
     background-size: cover;
+    z-index: 3;
 }
 
 .person-icon {
@@ -59,6 +61,7 @@ body {
     width: 20px;
     height: 20px;
     background-size: cover;
+    z-index: 3;
 }
 
 .freccia {
@@ -69,7 +72,8 @@ body {
     cursor: pointer;
     background: none;
     border: none;
-    color: #fff; /* Colore del testo delle frecce */
+    color: #fff;
+    z-index: 1;
 }
 
 .freccia-sx {
@@ -100,19 +104,6 @@ body {
     text-align: center;
 }
 
-.hero {
-    background-color: black;
-    color: #fff;
-    text-align: center;
-    padding-top: 50px;
-    overflow-x: hidden;
-}
-
-.giochi-evidenza h1 {
-    font-size: 3em;
-    margin-bottom: 20px;
-}
-
 .contenuto{
     position: relative;
     transition: transform 0.5s ease;
@@ -120,6 +111,8 @@ body {
 
 .cod{
     width: 100%;
+    flex: 1;
+    margin-right: 20px;
 }
 
 .cod img{
@@ -127,22 +120,25 @@ body {
     object-position: 0 75%;
     width: 100%;
     height: 500px;
+    margin: 0;
+    padding: 0;
 }
 
 .altro-contenuto {
     position: absolute;
     margin: 0 auto;
     padding: 0;
-    top: 0%;
-    left: 100%; /* Inizia fuori dalla viewport alla destra */
+    top: -31px;
+    left: 100%;
     width: 100%;
     height: 100%;
     box-sizing: border-box;
-    transition: left 0.5s ease; /* Animazione per la transizione laterale */
+    transition: left 0.5s ease;
+    flex: 1;
 }
 
 .nascosto {
-    left: 100%; /* Inizialmente nascosto alla destra */
+    left: 100%;
 }
 
 .but1{
@@ -151,12 +147,18 @@ body {
 
 .button {
     display: inline-block;
-    background-color: #007aff; /* Blu scuro per i pulsanti */
-    color: #fff;
-    padding: 10px 20px;
+    background-color: white;
+    font-weight: bold;
+    color: black;
+    padding: 10px 25px;
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 15px;
     margin-bottom: 3%;
+}
+
+.button:hover{
+    transform: scale(1.08);
+    transition: tranform 0.3 ease;
 }
 
 .featured-games {
@@ -177,4 +179,6 @@ body {
     margin-bottom: 10px;
 }
 
-
+.fc-live{
+    color: black;
+}
