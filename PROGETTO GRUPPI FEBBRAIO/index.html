@@ -15,7 +15,7 @@
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Negozio</a></li>
                 <li><a href="#">Community</a></li>
-                <li><a href="#">Informazioni</a></li>
+                <li><a href="info.html">Informazioni</a></li>
                 <li class="person-icon"><a href="#">a</a></li>
             </ul>
         </nav>
@@ -26,33 +26,57 @@
         <div class="contenuto">
             <div>
                 <h1>Call of Duty®</h1>
-                <div class="cod">
+                <div class="immagini">
                     <img src="immagini/modern-warfare-3-2023-4k-wallpapers-v0-z29gb3up0q1c1.webp">
                 </div>
                 <p>Disponibile ora.</p>
                 <a href="#" class="button">Scopri di più</a>
             </div>
-            <div class="altro-contenuto nascosto">
+            <div class="secondo-gioco">
                 <h1>Forza Horizon 5</h1>
-                <div class="cod">
+                <div class="immagini">
                     <img src="immagini/fh5.jpg">
                 </div>
+                <p>Nuova stagione!</p>
+                <a href="#" class="button">Scopri di più</a>
             </div>
-            <div class="altro-contenuto nascosto">
-                <h1>Forza Horizon 5</h1>
-                <div class="cod">
-                    <img src="immagini/fh5.jpg">
+            <div class="terzo-gioco">
+                <h1>Marvel’s Spider-Man: Miles Morales</h1>
+                <div class="immagini">
+                    <img src="immagini/smm.png">
                 </div>
+                <p>DLC in arrivo!</p>
+                <a href="#" class="button">Scopri di più</a>
+            </div>
+            <div class="quarto-gioco">
+                <h1>Palworld</h1>
+                <div class="immagini">
+                    <img src="immagini/palw.jpg">
+                </div>
+                <p>Novità in beta.</p>
+                <a href="#" class="button">Scopri di più</a>
+            </div>
+            <div class="quinto-gioco">
+                <h1>House Flipper 2</h1>
+                <div class="immagini">
+                    <img src="immagini/hf2.jpg">
+                </div>
+                <p>Sconto del 50%!</p>
+                <a href="#" class="button">Scopri di più</a>
             </div>
         </div>
         <button class="freccia freccia-dx" onclick="cambiaPagina(1)"><i class="fas fa-chevron-right"></i></button>
     </div>
     <div>
-        <div class="fc-live">
-            <p>LIVE ORA</p>
-            <h1>EA FC 24</h1>
+        <div class="fc-live centro">
+            <div class="live-title">
+                <h1>EA SPORTS FC™ 24</h1>
+                <span>LIVE ORA</span>
+            </div>
+            <iframe width="800" height="450" src="https://www.youtube.com/embed/N0Vcf2oCJ8A?si=UrrirVZn3OAV83cS&amp;start=550" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>
     </div>
+    <div style="height: 1004px"></div>
 
     <script>
         var paginaCorrente = 1;
@@ -70,9 +94,6 @@
             var traslazione = -100 * (paginaCorrente - 1) + '%';
             var contenuto = document.querySelector('.contenuto');
             contenuto.style.transform = 'translateX(' + traslazione + ')';
-
-            // Mostra o nascondi il nuovo contenuto
-            var altroContenuto = document.querySelector('.altro-contenuto');
             if (delta === 1) {
                 altroContenuto.classList.remove('nascosto');
             } else {

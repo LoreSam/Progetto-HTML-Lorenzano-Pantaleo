@@ -2,11 +2,18 @@ body {
     font-family: 'Helvetica Neue', Arial, sans-serif;
     margin: 0;
     padding: 0;
-    color: #fff; /* Colore del testo principale */
+    color: #fff;
 }
 
 .nero{
     background-color: black ;
+}
+
+.centro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
 
 .nav-head {
@@ -88,8 +95,9 @@ body {
     background-color: black;
     color: #fff;
     text-align: center;
-    padding-top: 50px;
+    padding-top: 5%;
     overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 .giochi-evidenza h1 {
@@ -97,25 +105,18 @@ body {
     margin-bottom: 20px;
 }
 
-.centro{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-}
-
 .contenuto{
     position: relative;
     transition: transform 0.5s ease;
 }
 
-.cod{
+.immagini{
     width: 100%;
     flex: 1;
     margin-right: 20px;
 }
 
-.cod img{
+.immagini img{
     object-fit: cover;
     object-position: 0 75%;
     width: 100%;
@@ -124,7 +125,7 @@ body {
     padding: 0;
 }
 
-.altro-contenuto {
+.secondo-gioco {
     position: absolute;
     margin: 0 auto;
     padding: 0;
@@ -135,6 +136,72 @@ body {
     box-sizing: border-box;
     transition: left 0.5s ease;
     flex: 1;
+}
+
+.terzo-gioco {
+    position: absolute;
+    margin: 0 auto;
+    padding: 0;
+    top: -31px;
+    left: 200%;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    transition: left 0.5s ease;
+    flex: 1;
+}
+
+.terzo-gioco img{
+    object-fit: cover;
+    object-position: 0 50%;
+    width: 100%;
+    height: 500px;
+    margin: 0;
+    padding: 0;
+}
+
+.quarto-gioco {
+    position: absolute;
+    margin: 0 auto;
+    padding: 0;
+    top: -31px;
+    left: 300%;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    transition: left 0.5s ease;
+    flex: 1;
+}
+
+.quarto-gioco img{
+    object-fit: cover;
+    object-position: 0 60%;
+    width: 100%;
+    height: 500px;
+    margin: 0;
+    padding: 0;
+}
+
+.quinto-gioco {
+    position: absolute;
+    margin: 0 auto;
+    padding: 0;
+    top: -31px;
+    left: 400%;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    transition: left 0.5s ease;
+    flex: 1;
+}
+
+.quinto-gioco img{
+    object-fit: cover;
+    object-position: 0 35%;
+    width: 100%;
+    height: 500px;
+    margin: 0;
+    padding: 0;
 }
 
 .nascosto {
@@ -153,19 +220,11 @@ body {
     padding: 10px 25px;
     text-decoration: none;
     border-radius: 15px;
-    margin-bottom: 3%;
+    margin-bottom: 2%;
 }
 
 .button:hover{
-    transform: scale(1.08);
-    transition: tranform 0.3 ease;
-}
 
-.featured-games {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 50px;
 }
 
 .game {
@@ -181,4 +240,18 @@ body {
 
 .fc-live{
     color: black;
+}
+
+.live-title{
+    margin-top: 2%;
+    margin-bottom: 1%;
+}
+
+.live-title h1{
+    display: inline;
+    font-size: 3em;
+}
+
+.live-title span{
+    padding-left: 250px;
 }
