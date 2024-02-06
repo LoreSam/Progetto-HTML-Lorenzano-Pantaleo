@@ -318,3 +318,26 @@ body {
 .live-title span{
     padding-left: 250px;
 }
+
+.offerte{
+    background-color: black;
+    margin-top: 50px;
+    height: 1000px;
+}
+
+.offerte-table{
+    padding-top: 5%;
+    margin-left: 25%;
+    margin-right: 25%;
+    padding: 0 auto;
+}
+
+.offerte-table img{
+    width: 50%;
+}
+
+.offerte-img1{
+}
+
+.offerte-img2{
+}
