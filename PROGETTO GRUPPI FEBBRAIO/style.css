@@ -320,36 +320,35 @@ body {
 }
 
 .offerte{
-    width: 70%;
-    margin-top: 50px;
-    height: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    margin: 0;
+    padding: 0;
+    margin-top: 5%;
+    background-color: rgb(53, 53, 53);
 }
 
-.offerte-dim{
-    position: relative;
-    padding-top: 2%;
-    padding-left: 2%;
-    padding-right: 2%;
-    display: block;
-    max-width: 80%;
+.offerte table{
+    width: 60%;
+    height: auto;
+    border-collapse: collapse;
 }
 
-.offerte-span{
-    width: 378px;
-    height: 398px;
-    display: block;
-    background-size: cover;
-    background-position-x: center;
-    float: left;
+.offerte td{
+    padding-left: 1%;
+    padding-top: 1%;
 }
 
-.offerte-span-small{
-    margin-left: 1%;
-    margin-bottom: 2%;
-    float: left;
-    width: 173px;
-    height: 182px;
+.offerte img{
+    max-width: 100%;
+    height: auto;
     display: block;
-    background-size: cover;
-    background-position-x: center;
+    margin: 0 auto;
+}
+
+.offerte-imgrossa{
+    width: 40%;
+    height: auto;
 }
