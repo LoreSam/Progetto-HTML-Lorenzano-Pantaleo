@@ -1,33 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Input Validation</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"/>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/1.0.2/tailwind.min.css"/>
-    <link rel="stylesheet" href="style.css" />
+<html>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  </head>
-  <body>
-    <header class="nav-head">
-        <nav>
-            <ul>
-                <li class="logo"><i class="fa fa-steam"></i></li>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="#">Negozio</a></li>
-                <li><a href="community.html">Community</a></li>
-                <li><a href="info.html">Informazioni</a></li>
-                <li class="person-icon"><a href="#"><i class="fa fa-user-circle-o"></i></a></li>
-            </ul>
-        </nav>
-    </header>
+<head>
+  <title>Input Validation</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/1.0.2/tailwind.min.css" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
 
-    <div class="login">
+<body>
+  <header class="nav-head">
+    <nav>
+      <ul>
+        <li class="logo"><i class="fa fa-steam"></i></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">Negozio</a></li>
+        <li><a href="community.html">Community</a></li>
+        <li><a href="info.html">Informazioni</a></li>
+        <li class="person-icon"><a href="#"><i class="fa fa-user-circle-o"></i></a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="login">
     <form action="">
       <h1>Accedi</h1>
       <div class="form-group">
@@ -35,9 +31,10 @@
         <input type="email" id="email" spellcheck=false required placeholder="Email" autocomplete="off" />
         <label for="email">Password</label>
         <input type="password" required placeholder="Password" autocomplete="off" />
-        <button type="submit" class="submitbtn">Accedi</button> 
+        <button type="submit" class="submitbtn">Accedi</button>
       </div>
     </form>
-    </div>
-  </body>
+  </div>
+</body>
+
 </html>
