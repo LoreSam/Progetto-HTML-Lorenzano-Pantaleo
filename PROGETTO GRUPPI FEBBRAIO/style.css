@@ -320,35 +320,43 @@ body {
 }
 
 .offerte{
+    background-color: black;
+    margin-top: 4%;
+    padding-bottom: 5%;
+}
+
+.offerte h1{
+    text-align: center;
+    padding-top: 3%;
+}
+
+.offertet{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 70vh;
     margin: 0;
     padding: 0;
-    margin-top: 5%;
-    background-color: rgb(53, 53, 53);
 }
 
-.offerte table{
+.offertet table{
     width: 60%;
     height: auto;
     border-collapse: collapse;
 }
 
-.offerte td{
+.offertet td{
     padding-left: 1%;
     padding-top: 1%;
 }
 
-.offerte img{
+.offertet img{
     max-width: 100%;
     height: auto;
     display: block;
     margin: 0 auto;
 }
 
-.offerte-imgrossa{
+.offertet-imgrossa{
     width: 40%;
     height: auto;
 }
