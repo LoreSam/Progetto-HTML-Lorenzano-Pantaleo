@@ -4,20 +4,55 @@
     <title>Palworld</title>
     <link rel="stylesheet" href="style.css">
     <style>
-        table {
+        .stable {
             border-collapse: collapse;
             color: black;
+            margin-top: 5%;
         }
 
         td, th {
-            border: 1px solid black;
             padding: 8px;
+        }
+
+        .spaziamento{
+            border-collapse: separate;
+            border-spacing: 10px;
+        }
+
+        .prezzi{
+            background-color:darkgrey;
+            border-radius: 35px;
+            width: 300px; 
+            height: 280px;
+            
+        }
+
+        .but-prez{
+            vertical-align: bottom;
+        }
+
+        .requisiti{
+            color: black;
+            text-align: left;
         }
     </style>
 </head>
 <body>
+    <header class="nav-head">
+        <nav>
+            <ul>
+                <li class="logo">a</li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Negozio</a></li>
+                <li><a href="community.html">Community</a></li>
+                <li><a href="info.html">Informazioni</a></li>
+                <li class="person-icon"><a href="#">a</a></li>
+            </ul>
+        </nav>
+    </header>
+
     <div class="centro">
-        <table>
+        <table class="stable">
             <tr>
                 <td rowspan="3"><iframe width="560" height="315" src="https://www.youtube.com/embed/ZPu9yAOEYkQ?si=yF2IL5xglZbYXJzz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></td>
                 <td><img src="immagini/palw1.jpg" width="400"></td>
@@ -40,10 +75,73 @@
                 </td>
             </tr>
         </table>
-                    
-                
     </div>
+
+<br><br><br><br><br><br><br>
+
+    <div class="centro spaziamento">
+        <table >
+            <tr>
+                <td class="prezzi">
+                    <h2>Acquista Palworld</h2>
+                    <button class="but-home pal">
+                        <div>€29,99</div>
+                    </button>
+                </td>
+                <td class="prezzi">
+                    <h2>Acquista Palworld + Battle Sound Track</h2>
+                    <button class="but-home pal">
+                        <div>€34,99</div>
+                    </button>
+                </td>
+                <td class="prezzi">
+                    <h2>Acquista DLC</h2>
+                    <button class="but-home pal">
+                        <div>€5,49</div>
+                    </button>
+                </td>
+                
+            </tr>
+        </table>
+    </div>
+
+<br><br><br><br><br><br><br>
     
+    <div class="requisiti centro">
+        <table>
+            <thead>
+                <h2>REQUISITI DI SISTEMA</h2>
+            </thead>
+            <tr>
+                <td>
+                    <h3>Minimi:</h3>
+                    Richiede un processore e un sistema operativo a 64 bit<br>
+                    <b>Sistema operativo</b>: Windows 10 or later (64-Bit)<br>
+                    <b>Processore</b>: i5-3570K 3.4 GHz 4 Core<br>
+                    <b>Memoria</b>: 16 GB di RAM<br>
+                    <b>Scheda video</b>: GeForce GTX 1050 (2GB)<br>
+                    <b>DirectX</b>: Versione 11<br>
+                    <b>Rete</b>: Connessione internet a banda larga<br>
+                    <b>Memoria</b>: 40 GB di spazio disponibile<br>
+                    <b>Note aggiuntive</b>: Internet connection required for multiplayer.<br> 
+                    <b>SSD required.</b>
+                </td>
+                <td>
+                    <h3>Consigliati:</h3>
+                    Richiede un processore e un sistema operativo a 64 bit<br>
+                    <b>Sistema operativo</b>: Windows 10 or later (64-Bit)<br>
+                    <b>Processore</b>: i9-9900K 3.6 GHz 8 Core<br>
+                    <b>Memoria</b>: 32 GB di RAM<br>
+                    <b>Scheda video</b>: GeForce RTX 2070<br>
+                    <b>DirectX</b>: Versione 11<br>
+                    <b>Rete</b>: Connessione internet a banda larga<br>
+                    <b>Memoria</b>: 40 GB di spazio disponibile<br>
+                    <b>Note aggiuntive</b>: Internet connection required for multiplayer.<br> 
+                    <b>SSD required.</b>
+                </td>
+            </tr>
+        </table>
+    </div>
     
 </body>
 </html>
