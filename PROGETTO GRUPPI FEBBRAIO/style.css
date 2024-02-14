@@ -1,371 +1,369 @@
 body {
-    font-family: 'Helvetica Neue', Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    color: #fff;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #fff;
 }
 
 .nero{
-    background-color: black ;
+  background-color: black ;
 }
 
 .centro{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
 .nav-head {
-    background-color: rgba(22, 22, 23, .8);
-    color: #fff;
-    padding: 15px;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 2;
+  background-color: rgba(22, 22, 23, .8);
+  color: #fff;
+  padding: 15px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 2;
 }
 
 .nav-head nav {
-    text-align: center;
+  text-align: center;
 }
 
 .nav-head nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .nav-head nav ul li {
-    display: inline-block;
-    margin-right: 20px;
+  display: inline-block;
+  margin-right: 20px;
 }
 
 .nav-head nav a {
-    text-decoration: none;
-    color: #fff;
-    font-weight: bold;
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
 }
 
 .logo {
-    position: absolute;
-    top: 15px;
-    left: 10px;
-    display: inline-block;
-    width: 40px;
-    height: 40px;
-    background-size: cover;
-    z-index: 3;
+  position: absolute;
+  top: 15px;
+  left: 10px;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background-size: cover;
+  z-index: 3;
 }
 
 .person-icon {
-    position: absolute;
-    top: 15px;
-    right: 30px;
-    width: 20px;
-    height: 20px;
-    z-index: 3;
+  position: absolute;
+  top: 15px;
+  right: 30px;
+  width: 20px;
+  height: 20px;
+  z-index: 3;
 }
 
 .freccia {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 24px;
-    cursor: pointer;
-    background: none;
-    border: none;
-    color: #fff;
-    z-index: 1;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 24px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  color: #fff;
+  z-index: 1;
 }
 
 .freccia-sx {
-    left: 10px;
+  left: 10px;
 }
 
 .freccia-dx {
-    right: 10px;
+  right: 10px;
 }
 
 .giochi-evidenza {
-    background-color: black;
-    color: #fff;
-    text-align: center;
-    padding-top: 5%;
-    overflow-x: hidden;
-    overflow-y: hidden;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding-top: 5%;
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 .giochi-evidenza h1 {
-    font-size: 3em;
-    margin-bottom: 20px;
+  font-size: 3em;
+  margin-bottom: 20px;
 }
 
 .contenuto{
-    position: relative;
-    transition: transform 0.5s ease;
+  position: relative;
+  transition: transform 0.5s ease;
 }
 
 .immagini{
-    width: 100%;
-    flex: 1;
-    margin-right: 20px;
+  width: 100%;
+  flex: 1;
+  margin-right: 20px;
 }
 
 .immagini img{
-    object-fit: cover;
-    object-position: 0 75%;
-    width: 100%;
-    height: 500px;
-    margin: 0;
-    padding: 0;
+  object-fit: cover;
+  object-position: 0 75%;
+  width: 100%;
+  height: 500px;
+  margin: 0;
+  padding: 0;
 }
 
 .secondo-gioco {
-    position: absolute;
-    margin: 0 auto;
-    padding: 0;
-    top: -31px;
-    left: 100%;
-    width: 100%;
-    height: 100%;
-    box-sizing: border-box;
-    transition: left 0.5s ease;
-    flex: 1;
+  position: absolute;
+  margin: 0 auto;
+  padding: 0;
+  top: -31px;
+  left: 100%;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  transition: left 0.5s ease;
+  flex: 1;
 }
 
 .terzo-gioco {
-    position: absolute;
-    margin: 0 auto;
-    padding: 0;
-    top: -31px;
-    left: 200%;
-    width: 100%;
-    height: 100%;
-    box-sizing: border-box;
-    transition: left 0.5s ease;
-    flex: 1;
+  position: absolute;
+  margin: 0 auto;
+  padding: 0;
+  top: -31px;
+  left: 200%;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  transition: left 0.5s ease;
+  flex: 1;
 }
 
 .terzo-gioco img{
-    object-fit: cover;
-    object-position: 0 50%;
-    width: 100%;
-    height: 500px;
-    margin: 0;
-    padding: 0;
+  object-fit: cover;
+  object-position: 0 50%;
+  width: 100%;
+  height: 500px;
+  margin: 0;
+  padding: 0;
 }
 
 .quarto-gioco {
-    position: absolute;
-    margin: 0 auto;
-    padding: 0;
-    top: -31px;
-    left: 300%;
-    width: 100%;
-    height: 100%;
-    box-sizing: border-box;
-    transition: left 0.5s ease;
-    flex: 1;
+  position: absolute;
+  margin: 0 auto;
+  padding: 0;
+  top: -31px;
+  left: 300%;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  transition: left 0.5s ease;
+  flex: 1;
 }
 
 .quarto-gioco img{
-    object-fit: cover;
-    object-position: 0 60%;
-    width: 100%;
-    height: 500px;
-    margin: 0;
-    padding: 0;
+  object-fit: cover;
+  object-position: 0 60%;
+  width: 100%;
+  height: 500px;
+  margin: 0;
+  padding: 0;
 }
 
 .quinto-gioco {
-    position: absolute;
-    margin: 0 auto;
-    padding: 0;
-    top: -31px;
-    left: 400%;
-    width: 100%;
-    height: 100%;
-    box-sizing: border-box;
-    transition: left 0.5s ease;
-    flex: 1;
+  position: absolute;
+  margin: 0 auto;
+  padding: 0;
+  top: -31px;
+  left: 400%;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  transition: left 0.5s ease;
+  flex: 1;
 }
 
 .quinto-gioco img{
-    object-fit: cover;
-    object-position: 0 35%;
-    width: 100%;
-    height: 500px;
-    margin: 0;
-    padding: 0;
+  object-fit: cover;
+  object-position: 0 35%;
+  width: 100%;
+  height: 500px;
+  margin: 0;
+  padding: 0;
 }
 
 .nascosto {
-    left: 100%;
+  left: 100%;
 }
 
 .but-home {
-    width: 160px;
-    font-size: 16px;
-    font-weight: 600;
-    color: black;
-    cursor: pointer;
-    padding: 10px;
-    margin-bottom: 20px;
-    height: 55px;
-    text-align:center;
-    border: none;
-    background-size: 300% 100%;
-    border-radius: 50px;
-    moz-transition: all .4s ease-in-out;
-    -o-transition: all .4s ease-in-out;
-    -webkit-transition: all .4s ease-in-out;
-    transition: all .4s ease-in-out;
+  width: 160px;
+  font-size: 16px;
+  font-weight: 600;
+  color: black;
+  cursor: pointer;
+  padding: 10px;
+  margin-bottom: 20px;
+  height: 55px;
+  text-align:center;
+  border: none;
+  background-size: 300% 100%;
+  border-radius: 50px;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
 }
-  
+
 .but-home:hover {
-    background-position: 100% 0;
-    moz-transition: all .4s ease-in-out;
-    -o-transition: all .4s ease-in-out;
-    -webkit-transition: all .4s ease-in-out;
-    transition: all .4s ease-in-out;
-    color: white;
+  background-position: 100% 0;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+  color: white;
 }
-  
+
 .but-home:focus {
-    outline: none;
+  outline: none;
 }
-  
+
 .but-home.cod {
-    background-image: linear-gradient(
-      to right,
-      white,
-      rgb(255, 175, 175),
-      red,
-      rgb(153, 0, 0)
-    );
+  background-image: linear-gradient(
+    to right,
+    white,
+    rgb(255, 175, 175),
+    red,
+    rgb(153, 0, 0)
+  );
 }
 
 .but-home.forza {
-    background-image: linear-gradient(
-      to right,
-      white,
-      rgb(191, 226, 65),
-      rgb(127, 197, 34),
-      rgb(40, 169, 192)
-    );
+  background-image: linear-gradient(
+    to right,
+    white,
+    rgb(191, 226, 65),
+    rgb(127, 197, 34),
+    rgb(40, 169, 192)
+  );
 }
 
 .but-home.spi {
-    background-image: linear-gradient(
-      to right,
-      white,
-      rgb(170, 29, 60),
-      rgb(112, 10, 52),
-      rgb(13, 5, 49)
-    );
+  background-image: linear-gradient(
+    to right,
+    white,
+    rgb(170, 29, 60),
+    rgb(112, 10, 52),
+    rgb(13, 5, 49)
+  );
 }
 
 .but-home.pal {
-    background-image: linear-gradient(
-      to right,
-      white,
-      rgb(61, 245, 230),
-      rgb(22, 185, 104),
-      rgb(174, 228, 28)
-    );
+  background-image: linear-gradient(
+    to right,
+    white,
+    rgb(61, 245, 230),
+    rgb(22, 185, 104),
+    rgb(174, 228, 28)
+  );
 }
 
 .but-home.flipper {
-    background-image: linear-gradient(
-      to right,
-      white,
-      rgb(226, 196, 65),
-      rgb(230, 174, 22),
-      rgb(224, 45, 21)
-    );
+  background-image: linear-gradient(
+    to right,
+    white,
+    rgb(226, 196, 65),
+    rgb(230, 174, 22),
+    rgb(224, 45, 21)
+  );
 }
 
 .game {
-    text-align: center;
+  text-align: center;
 }
 
 .game img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 5px;
-    margin-bottom: 10px;
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 10px;
 }
 
 .fc-live{
-    color: black;
+  color: black;
 }
 
 .live-title{
-    margin-top: 2%;
-    margin-bottom: 1%;
+  margin-top: 2%;
+  margin-bottom: 1%;
 }
 
 .live-title h1{
-    display: inline;
-    font-size: 3em;
+  display: inline;
+  font-size: 3em;
 }
 
 .live-title span{
-    padding-left: 250px;
+  padding-left: 250px;
 }
 
 .offerte{
-    background-color: black;
-    margin-top: 4%;
-    padding-bottom: 5%;
+  background-color: black;
+  margin-top: 4%;
+  padding-bottom: 5%;
 }
 
 .offerte h1{
-    text-align: center;
-    padding-top: 3%;
+  text-align: center;
+  padding-top: 3%;
 }
 
 .offertet{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
-    padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
 }
 
 .offertet table{
-    width: 60%;
-    height: auto;
-    border-collapse: collapse;
+  width: 60%;
+  height: auto;
+  border-collapse: collapse;
 }
 
 .offertet td{
-    padding-left: 1%;
-    padding-top: 1%;
+  padding-left: 1%;
+  padding-top: 1%;
 }
 
 .offertet img{
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
 }
 
 .offertet-imgrossa{
-    width: 40%;
-    height: auto;
+  width: 40%;
+  height: auto;
 }
 
 .footer {
-    display: flex;
-    flex-flow: row wrap;
-    padding: 30px 30px 20px 30px;
-    color: #2f2f2f;
-    background-color: #fff;
-    border-top: 1px solid #e5e5e5;
-  }
-  
+  display: flex;
+  flex-flow: row wrap;
+  padding: 30px 30px 20px 30px;
+  color: #2f2f2f;
+  background-color: #fff;
+  border-top: 1px solid #e5e5e5;
+}
+
 .footer > * {
   flex:  1 100%;
 }
@@ -426,7 +424,7 @@ body {
 
 .footer__nav {
   display: flex;
-    flex-flow: row wrap;
+  flex-flow: row wrap;
 }
 
 .footer__nav > * {
