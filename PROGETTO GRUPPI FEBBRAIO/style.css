@@ -433,7 +433,7 @@ body {
 }
 
 .nav__ul a {
-  color: #999;
+  color: #949494;
 }
 
 .nav__ul--extra {
@@ -561,4 +561,121 @@ input:valid {
   font-weight: 400;
   font-size: 30px;
   color: #a9a9a9;
+}
+
+.area{
+  padding-bottom: 10vw;
+	overflow: hidden;
+}
+
+.download{
+  position: relative;
+  display: block;
+}
+
+.download-head{
+  padding-top: 10vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.download-logo{
+  width: 50vh;
+}
+
+.download-sottotitoli{
+  margin-top: 5vh;
+}
+
+.download-onlinestats{
+  margin-top: 5vh;
+}
+
+.download-onlinestats::after{
+  content: "";
+	display: table;
+	clear: both
+}
+
+.stats{
+  font-family: "Motiva Sans", Sans-serif;
+  font-weight: 300;
+  float: left;
+  width: 50%;
+  font-size: 4vw;
+}
+
+.onlinestats-label{
+  font-family: "Motiva Sans", Sans-serif;
+  font-weight: 500;
+  position: relative;
+  padding-left: 4vw;
+  color: #AEAEAE;
+  text-transform: uppercase;
+  font-size: 3vw;
+  letter-spacing: 0.2vw;
+}
+
+.onlinestats-label:before {
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 1vw;
+	width: 2vw;
+	height: 2vw;
+	border-radius: 50%;
+	background-color: #fff;
+}
+
+.onlinestats-label.ingioco:before {
+	background-color: #BAFF2E;
+}
+
+.onlinestats-label.online:before {
+	background-color: #2EBFFF;
+}
+
+.install{
+  margin-top: 7vh;
+}
+
+.install a{
+  display: block;
+  text-transform: uppercase;
+  width: calc(100% - 75px);
+  padding: 15px 50px 15px 25px;
+  border-radius: 3px;
+  filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.16));
+  font-size: 18px;
+  line-height: 1;
+  letter-spacing: 0.03em;
+  text-align: left;
+  color: #fff;
+  position: relative;
+  font-family: "Motiva Sans", Sans-serif;
+  font-weight: normal;
+  background: linear-gradient(to right, #06bfff 50%, #2b74ff 100%);
+  background-size: 200%;
+  background-position: right 0;
+  transition: background-position 300ms ease-in;
+  text-decoration: none;
+}
+
+.install-win a{
+  display: flex;
+  align-items: center;
+}
+
+.install-win::after{
+  content: "";
+	background-position: top right;
+	background-size: auto 100%;
+	background-repeat: no-repeat;
+	width: 18px;
+	height: 18px;
+	position: absolute;
+	right: 25px;
+  background-image: url('https://cdn.akamai.steamstatic.com/store/about/icon-windows.svg');
 }
