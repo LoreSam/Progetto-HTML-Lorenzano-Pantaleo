@@ -566,11 +566,11 @@ input:valid {
 .area{
   padding-bottom: 10vw;
 	overflow: hidden;
+  display: block;
 }
 
 .download{
   position: relative;
-  display: block;
 }
 
 .download-head{
@@ -582,11 +582,14 @@ input:valid {
 }
 
 .download-logo{
-  width: 50vh;
+  width: 25vh;
 }
 
 .download-sottotitoli{
   margin-top: 5vh;
+  font-size: 24px;
+	color: #fff;
+	font-weight: 200;
 }
 
 .download-onlinestats{
@@ -604,27 +607,32 @@ input:valid {
   font-weight: 300;
   float: left;
   width: 50%;
-  font-size: 4vw;
+  font-size: 24px;
 }
 
 .onlinestats-label{
   font-family: "Motiva Sans", Sans-serif;
   font-weight: 500;
   position: relative;
-  padding-left: 4vw;
   color: #AEAEAE;
   text-transform: uppercase;
-  font-size: 3vw;
+  /*
+  font-size: 20px;
   letter-spacing: 0.2vw;
+  padding-left: 4vw;*/
+
+  font-size: 10px;
+  letter-spacing: 1px;
+  padding-left: 15px;
 }
 
 .onlinestats-label:before {
 	content: "";
 	position: absolute;
 	left: 0;
-	top: 1vw;
-	width: 2vw;
-	height: 2vw;
+	top: 3px;
+	width: 7px;
+	height: 7px;
 	border-radius: 50%;
 	background-color: #fff;
 }
@@ -638,10 +646,13 @@ input:valid {
 }
 
 .install{
-  margin-top: 7vh;
+  margin-top: 25px;
+  width: 260px;
 }
 
-.install a{
+.install-win{
+  display: flex;
+  align-items: center;
   display: block;
   text-transform: uppercase;
   width: calc(100% - 75px);
@@ -652,7 +663,6 @@ input:valid {
   line-height: 1;
   letter-spacing: 0.03em;
   text-align: left;
-  color: #fff;
   position: relative;
   font-family: "Motiva Sans", Sans-serif;
   font-weight: normal;
@@ -660,12 +670,15 @@ input:valid {
   background-size: 200%;
   background-position: right 0;
   transition: background-position 300ms ease-in;
-  text-decoration: none;
+}
+
+.install-win:hover{
+  background-position: 0 0;
 }
 
 .install-win a{
-  display: flex;
-  align-items: center;
+  text-decoration: none;
+  color: white;
 }
 
 .install-win::after{
@@ -677,5 +690,6 @@ input:valid {
 	height: 18px;
 	position: absolute;
 	right: 25px;
+
   background-image: url('https://cdn.akamai.steamstatic.com/store/about/icon-windows.svg');
 }
