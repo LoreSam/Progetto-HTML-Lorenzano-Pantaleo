@@ -285,6 +285,38 @@ body {
   );
 }
 
+.but-buy {
+  width: 160px;
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+  background-color: #0071e3;
+  cursor: pointer;
+  padding: 10px;
+  margin-bottom: 20px;
+  height: 55px;
+  text-align:center;
+  border: none;
+  background-size: 300% 100%;
+  border-radius: 15px;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+.but-buy:hover {
+  background-color: #0097dd;
+  -o-transition: all .2s ease-in-out;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+.but-buy:not(:hover) {
+  -o-transition: all .2s ease-in-out;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
 .game {
   text-align: center;
 }
@@ -319,7 +351,7 @@ body {
 	content: "";
 	position: absolute;
 	left: 70%;
-	top: 5%;
+	top: 0;
 	width: 6%;
 	height: 100%;
 	border-radius: 50%;

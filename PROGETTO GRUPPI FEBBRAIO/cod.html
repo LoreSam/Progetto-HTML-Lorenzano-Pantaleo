@@ -17,46 +17,51 @@
             padding-bottom: 3%;
         }
 
-        .stable-tdh{
+        .stable-tdh {
             padding: 8px;
         }
 
-        .img-table{
+        .img-table {
             padding: 0;
             margin: 0;
-            
         }
 
-        .img-table td{
+        .img-table td {
             padding-left: 0.6em;
         }
 
-        .img-table img{
+        .img-table img {
             padding: 0;
             width: 11em;
             height: auto;
         }
 
-        .spaziamento {
-            border-collapse: separate;
-            border-spacing: 10px;
-        }
-
         .prezzi {
-            background-color: darkgrey;
-            border-radius: 35px;
-            width: 300px;
-            height: 280px;
-
+            width: 100%;
+            padding-top: 4%;
+            padding-bottom: 4%;
+            color: black;
         }
 
-        .but-prez {
-            vertical-align: bottom;
+        .prezzi td {
+            /* background-image: linear-gradient(to right,
+                    rgb(116, 141, 111), 
+                    rgb(71, 83, 70),
+                    rgb(58, 82, 58)); */
+            border-radius: 20px;
+            width: 40%;
+            height: 250px;
         }
 
         .requisiti {
-            color: black;
+            padding-top: 3%;
+            padding-bottom: 8%;
+            background-color: black;
             text-align: left;
+        }
+
+        .requisiti td{
+            padding-left: 100px;
         }
     </style>
 </head>
@@ -82,8 +87,10 @@
             <table>
                 <tr class="stable-tdh">
                     <td rowspan="2" class="stable-tdh">
-                        <video controls autoplay muted src="immagini/codvid1.webm" width="560" height="315"></video></td>
-                    <td class="stable-tdh"><img src="immagini/modern-warfare-3-2023-4k-wallpapers-v0-z29gb3up0q1c1.webp" width="400"></td>
+                        <video controls autoplay loop muted src="immagini/codvid1.webm" width="560" height="315"></video>
+                    </td>
+                    <td class="stable-tdh"><img src="immagini/modern-warfare-3-2023-4k-wallpapers-v0-z29gb3up0q1c1.webp"
+                            width="400"></td>
                 </tr>
                 <tr class="stable-tdh">
                     <td class="stable-tdh">
@@ -96,8 +103,8 @@
                     <td class="stable-tdh">
                         <table class="img-table">
                             <tr>
-                                <!-- <td><img src="immagini/codimg1.jpg"></td> -->
-                                <td><video controls autoplay muted src="immagini/codvid2.webm" width="175px" height="auto"></video></td>
+                                <td><video controls autoplay loop muted src="immagini/codvid2.webm" width="175px"
+                                        height="auto"></video></td>
                                 <td><img src="immagini/codimg2.jpg"></td>
                                 <td><img src="immagini/codimg3.jpg"></td>
                             </tr>
@@ -115,69 +122,158 @@
         </div>
     </div>
 
-    <div>
-        <table class="centro spaziamento">
+    <div class="prezzi centro">
+        <table>
             <tr>
-                <td class="prezzi">
-                    <h2>Acquista Call of Duty®: Modern Warfare® III</h2>
-                    <button class="but-home cod">
+                <td>
+                    <h2>Acquista Call of Duty®: <br>Modern Warfare® III</h2>
+                    <button class="but-buy">
                         <div>€48,99</div>
                     </button>
                 </td>
-                <td class="prezzi">
-                    <h2>Acquista Call of Duty®: Modern Warfare® III - Edizione Cassaforte</h2>
-                    <button class="but-home cod">
+                <td>
+                    <h2>Acquista Call of Duty®: <br>Modern Warfare® III - Edizione Cassaforte</h2>
+                    <button class="but-buy">
                         <div>€79,99</div>
                     </button>
                 </td>
-                <td class="prezzi">
+
+            </tr>
+            <tr>
+                <td colspan="2">
                     <h2>Compra i<br> Call of Duty® Points</h2>
-                    <button class="but-home cod">
+                    <button class="but-buy">
                         <div> da €1,49<br> a €149,99</div>
                     </button>
                 </td>
-
             </tr>
         </table>
     </div>
 
-    <br><br><br><br><br><br><br>
-
     <div class="requisiti centro">
         <table>
             <thead>
-                <h2>REQUISITI DI SISTEMA<h2>
+                <h1>REQUISITI DI SISTEMA<h1>
             </thead>
             <tr>
                 <td>
-                    <h3>Minimi:</h3>
+                    <h2>Minimi:</h2>
                     Richiede un processore e un sistema operativo a 64 bit<br>
-                    <b>Sistema operativo</b>: Windows® 10 64-bit (con il più recente aggiornamento)<br>
-                    <b>Processore</b>: Intel® Core™ i5-6600 o AMD Ryzen™ 5 1400<br>
-                    <b>Memoria</b>: 8 GB di RAM<br>
-                    <b>Scheda video</b>: NVIDIA® GeForce® GTX 960/GTX 1650 o AMD Radeon™ RX 470<br>
-                    <b>DirectX</b>: Versione 12<br>
-                    <b>Rete</b>: Connessione internet a banda larga<br>
-                    <b>Memoria</b>: 40 GB di spazio disponibile<br>
-                    <b>Note aggiuntive</b>: SSD con 149 GB di spazio disponibile al lancio <br>(78 GB se COD HQ e Call
+                    <u>Sistema operativo</u>: Windows® 10 64-bit (con il più recente aggiornamento)<br>
+                    <u>Processore</u>: Intel® Core™ i5-6600 o AMD Ryzen™ 5 1400<br>
+                    <u>Memoria</u>: 8 GB di RAM<br>
+                    <u>Scheda video</u>: NVIDIA® GeForce® GTX 960/GTX 1650 o AMD Radeon™ RX 470<br>
+                    <u>DirectX</u>: Versione 12<br>
+                    <u>Rete</u>: Connessione internet a banda larga<br>
+                    <u>Memoria</u>: 40 GB di spazio disponibile<br>
+                    <u>Note aggiuntive</u>: SSD con 149 GB di spazio disponibile al lancio <br>(78 GB se COD HQ e Call
                     of Duty®: Warzone™ sono già installati)<br>
 
                 </td>
                 <td>
-                    <h3>Consigliati:</h3>
+                    <h2>Consigliati:</h2>
                     Richiede un processore e un sistema operativo a 64 bit<br>
-                    <b>Sistema operativo</b>: Windows 10 or later (64-Bit)<br>
-                    <b>Processore</b>: Intel® Core™ i7-6700K o AMD Ryzen™ 5 1600X<br>
-                    <b>Memoria</b>: 16 GB di RAM<br>
-                    <b>Scheda video</b>: NVIDIA® GeForce® GTX 1080Ti/RTX 3060 o AMD Radeon™ RX 6600XT<br>
-                    <b>DirectX</b>: Versione 12<br>
-                    <b>Rete</b>: Connessione internet a banda larga<br>
-                    <b>Memoria</b>: 40 GB di spazio disponibile<br>
-                    <b>Note aggiuntive</b>: SSD con 149 GB di spazio disponibile al lancio <br>(78 GB se COD HQ e Call
+                    <u>Sistema operativo</u>: Windows 10 or later (64-Bit)<br>
+                    <u>Processore</u>: Intel® Core™ i7-6700K o AMD Ryzen™ 5 1600X<br>
+                    <u>Memoria</u>: 16 GB di RAM<br>
+                    <u>Scheda video</u>: NVIDIA® GeForce® GTX 1080Ti/RTX 3060 o AMD Radeon™ RX 6600XT<br>
+                    <u>DirectX</u>: Versione 12<br>
+                    <u>Rete</u>: Connessione internet a banda larga<br>
+                    <u>Memoria</u>: 40 GB di spazio disponibile<br>
+                    <u>Note aggiuntive</u>: SSD con 149 GB di spazio disponibile al lancio <br>(78 GB se COD HQ e Call
                     of Duty®: Warzone™ sono già installati)
                 </td>
             </tr>
         </table>
+    </div>
+
+    <div>
+        <footer class="footer">
+            <div class="footer__addr">
+                <h1 class="footer__logo">Steam®</h1>
+                <p>
+                    <h8>© 2024 Valve Corporation. Tutti i diritti riservati. <br>Tutti i marchi appartengono ai
+                        rispettivi proprietari negli Stati Uniti e negli altri paesi.
+                        <br>IVA inclusa nel prezzo (ove applicabile)
+                    </h8>
+                </p>
+            </div>
+
+            <ul class="footer__nav">
+                <li class="nav__item">
+                    <h2 class="nav__title">Rimborsi</h2>
+
+                    <ul class="nav__ul">
+                        <li>
+                            <a href="#">Online</a>
+                        </li>
+
+                        <li>
+                            <a href="#">Print</a>
+                        </li>
+
+                        <li>
+                            <a href="#">Alternative Ads</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="nav__item">
+                    <h2 class="nav__title">Privacy</h2>
+
+                    <ul class="nav__ul">
+                        <li>
+                            <a href="#">Termini e Condizioni</a>
+                        </li>
+
+                        <li>
+                            <a href="#">Informazioni Legali</a>
+                        </li>
+
+                        <li>
+                            <a href="#">Contratto di sottoscrizione a Steam</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="nav__item">
+                    <h2 class="nav__title">Impieghi</h2>
+
+                    <ul class="nav__ul">
+                        <li>
+                            <a href="#">Game Designer</a>
+                        </li>
+
+                        <li>
+                            <a href="#">Software Engineer</a>
+                        </li>
+
+                        <li>
+                            <a href="#">Finanza</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="nav__item">
+                    <h2 class="nav__title">Contattaci</h2>
+
+                    <ul class="nav__ul">
+                        <li>
+                            <a href="#">Email</a>
+                        </li>
+
+                        <li>
+                            <a href="#">Telefono</a>
+                        </li>
+
+                        <li>
+                            <a href="#">Steam <img
+                                    src="https://store.akamai.steamstatic.com/public/images/ico/ico_twitter.png"></a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </footer>
     </div>
 </body>
 
