@@ -14,7 +14,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  text-align: center;
+  text-align: justify;
 }
 
 .nav-head {
@@ -610,4 +610,59 @@ input:valid {
   font-weight: 400;
   font-size: 30px;
   color: #a9a9a9;
+}
+
+.stable {
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  padding-top: 4%;
+  padding-bottom: 3%;
+}
+
+.stable-tdh {
+  padding: 8px;
+}
+
+.img-table {
+  padding: 0;
+  margin: 0;
+}
+
+.img-table td {
+  padding-left: 0.6em;
+}
+
+.img-table img {
+  padding: 0;
+  width: 11em;
+  height: auto;
+}
+
+.prezzi {
+  width: 100%;
+  padding-top: 4%;
+  padding-bottom: 4%;
+  color: black;
+}
+
+.prezzi td {
+  /* background-image: linear-gradient(to right,
+          rgb(116, 141, 111), 
+          rgb(71, 83, 70),
+          rgb(58, 82, 58)); */
+  border-radius: 20px;
+  width: 40%;
+  height: 250px;
+}
+
+.requisiti {
+  padding-top: 3%;
+  padding-bottom: 8%;
+  background-color: black;
+  text-align: left;
+}
+
+.requisiti td{
+  padding-left: 100px;
 }

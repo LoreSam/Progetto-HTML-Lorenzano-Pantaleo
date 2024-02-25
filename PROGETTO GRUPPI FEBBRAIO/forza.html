@@ -1,45 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <title>Forza Horizon 5</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="immagini/steam.svg" type="favicon/svg"/>
+    <link rel="shortcut icon" href="immagini/steam.svg" type="favicon/svg" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <style>
-        .stable {
-            border-collapse: collapse;
-            color: black;
-            margin-top: 5%;
-        }
-
-        td, th {
-            padding: 8px;
-        }
-
-        .spaziamento{
-            border-collapse: separate;
-            border-spacing: 10px;
-        }
-
-        .prezzi{
-            background-color:darkgrey;
-            border-radius: 35px;
-            width: 300px; 
-            height: 280px;
-            
-        }
-
-        .but-prez{
-            vertical-align: bottom;
-        }
-
-        .requisiti{
-            color: black;
-            text-align: left;
-        }
-    </style>
+    <link href="infopage/css/motiva_sans.css" rel="stylesheet" type="text/css">
 </head>
+
 <body>
     <header class="nav-head">
         <nav>
@@ -49,98 +19,199 @@
                 <li><a href="giochi.html">Negozio</a></li>
                 <li><a href="community.html">Community</a></li>
                 <li><a href="infopage/info.html">Informazioni</a></li>
-                <li class="person-icon"><a href="loginpage/login.html"><i class="fa fa-user-circle-o"></i></a></li> <!-- da sistemare perchè pagina incompleta -->
+                <li class="person-icon"><a href="loginpage/login.html"><i class="fa fa-user-circle-o"></i></a></li>
+                <!-- da sistemare perchè pagina incompleta -->
             </ul>
         </nav>
     </header>
 
-    <div class="centro">
-        <table class="stable">
-            <tr>
-                <td rowspan="3"><iframe width="560" height="315" src="https://www.youtube.com/embed/FYH9n37B7Yw?si=d8-9KRYMUIcWKkt_&amp;start=4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></td>
-                <td><img src="immagini/fh5.jpg" width="400"></td>
+    <div class="stable centro">
+        <h1>Forza Horizon 5</h1>
+        <table>
+            <tr class="stable-tdh">
+                <td rowspan="2" class="stable-tdh">
+                    <video controls autoplay loop muted src="immagini/fh5vid1.webm" width="560" height="315"></video>
+                </td>
+                <td class="stable-tdh"><img src="immagini/fh5.jpg" width="400"></td>
             </tr>
-            <tr>
-                <td>
+            <tr class="stable-tdh">
+                <td class="stable-tdh">
                     Esplora i vivaci paesaggi open world del Messico.<br>
-                    Divertimento al volante illimitato con centinaia tra le migliori auto del mondo.<br>
+                    Divertimento al volante illimitato <br>con centinaia tra le migliori auto del mondo.<br>
                     Conquista gli aspri orizzonti di Sierra Nueva<br>
                     nell'esperienza Rally Horizon definitiva.
                 </td>
             </tr>
-            <tr>
-                <td>
+            <tr class="stable-tdh">
+                <td class="stable-tdh">
+                    <table class="img-table">
+                        <tr>
+                            <td><video controls autoplay loop muted src="immagini/fh5vid2.webm" width="175px"
+                                    height="auto"></video></td>
+                            <td><img src="immagini/fh5img1.jpg"></td>
+                            <td><img src="immagini/fh5img2.jpg"></td>
+                        </tr>
+                    </table>
+                </td>
+                <td class="stable-tdh">
                     <ul align="left">
-                        <li>TUTTE LE VALUTAZIONI: Molto positiva (150,756)</li>
-                        <li>DATA DI RILASCIO: 9 nov 2021</li>
-                        <li>SVILUPPATORE: Xbox Game Studios</li>
+                        <li><u>TUTTE LE VALUTAZIONI</u>: Molto positiva (150,756)</li>
+                        <li><u>DATA DI RILASCIO</u>: 9 nov 2021</li>
+                        <li><u>SVILUPPATORE</u>: Xbox Game Studios</li>
                     </ul>
                 </td>
             </tr>
         </table>
     </div>
 
-<br><br><br><br><br><br><br>
-
-    <div class="centro spaziamento">
-        <table >
+    <div class="prezzi centro">
+        <table>
             <tr>
-                <td class="prezzi">
+                <td>
                     <h2>Acquista Forza Horizon 5 - Standard Edition</h2>
-                    <button class="but-home forza">
+                    <button class="but-buy">
                         <div>€59,99</div>
                     </button>
                 </td>
-                <td class="prezzi">
+                <td>
                     <h2>Acquista Forza Horizon 5 - Deluxe Edition</h2>
-                    <button class="but-home forza">
+                    <button class="but-buy">
                         <div>€74,99</div>
                     </button>
                 </td>
-                <td class="prezzi">
-                    <h2>Acquista Forza Horizon 5 - Premium Edition</h2>
-                    <button class="but-home forza">
-                        <div>€99,99</div>
-                    </button>
-                </td>
-                
+                <tr>
+                    <td colspan="2">
+                        <h2>Acquista Forza Horizon 5 - Premium Edition</h2>
+                        <button class="but-buy">
+                            <div>€99,99</div>
+                        </button>
+                    </td>
+                </tr>
             </tr>
         </table>
     </div>
 
-<br><br><br><br><br><br><br>
-    
     <div class="requisiti centro">
         <table>
             <thead>
-                <h2>REQUISITI DI SISTEMA</h2>
+                <h1>REQUISITI DI SISTEMA</h1>
             </thead>
             <tr>
                 <td>
-                    <h3>Minimi:</h3>
+                    <h2>Minimi:</h2>
                     Richiede un processore e un sistema operativo a 64 bit<br>
-                    <b>Sistema operativo</b>: Windows 10 version 18362.0 or higher<br>
-                    <b>Processore</b>:  Intel i5-4460 or AMD Ryzen 3 1200<br>
-                    <b>Memoria</b>: 8 GB di RAM<br>
-                    <b>Scheda video</b>: NVidia GTX 970 OR AMD RX 470<br>
-                    <b>DirectX</b>: Versione 12<br>
-                    <b>Rete</b>: Connessione internet a banda larga<br>
-                    <b>Memoria</b>: 110 GB di spazio disponibile<br>
+                    <u>Sistema operativo</u>: Windows 10 version 18362.0 or higher<br>
+                    <u>Processore</u>: Intel i5-4460 or AMD Ryzen 3 1200<br>
+                    <u>Memoria</u>: 8 GB di RAM<br>
+                    <u>Scheda video</u>: NVidia GTX 970 OR AMD RX 470<br>
+                    <u>DirectX</u>: Versione 12<br>
+                    <u>Rete</u>: Connessione internet a banda larga<br>
+                    <u>Memoria</u>: 110 GB di spazio disponibile<br>
                 </td>
                 <td>
-                    <h3>Consigliati:</h3>
+                    <h2>Consigliati:</h2>
                     Richiede un processore e un sistema operativo a 64 bit<br>
-                    <b>Sistema operativo</b>: Windows 10 version 18362.0 or higher<br>
-                    <b>Processore</b>:  Intel i5-8400 or AMD Ryzen 5 1500X<br>
-                    <b>Memoria</b>: 16 GB di RAM<br>
-                    <b>Scheda video</b>: NVidia GTX 1070 OR AMD RX 590<br>
-                    <b>DirectX</b>: Versione 12<br>
-                    <b>Rete</b>: Connessione internet a banda larga<br>
-                    <b>Memoria</b>: 150 GB di spazio disponibile<br>
+                    <u>Sistema operativo</u>: Windows 10 version 18362.0 or higher<br>
+                    <u>Processore</u>: Intel i5-8400 or AMD Ryzen 5 1500X<br>
+                    <u>Memoria</u>: 16 GB di RAM<br>
+                    <u>Scheda video</u>: NVidia GTX 1070 OR AMD RX 590<br>
+                    <u>DirectX</u>: Versione 12<br>
+                    <u>Rete</u>: Connessione internet a banda larga<br>
+                    <u>Memoria</u>: 150 GB di spazio disponibile<br>
                 </td>
             </tr>
         </table>
     </div>
-    
+
+    <div>
+        <footer class="footer">
+            <div class="footer__addr">
+                <h1 class="footer__logo">Steam®</h1>
+                <p>
+                    <h8>© 2024 Valve Corporation. Tutti i diritti riservati. <br>Tutti i marchi appartengono ai
+                        rispettivi proprietari negli Stati Uniti e negli altri paesi.
+                        <br>IVA inclusa nel prezzo (ove applicabile)
+                    </h8>
+                </p>
+            </div>
+
+            <ul class="footer__nav">
+                <li class="nav__item">
+                    <h2 class="nav__title">Rimborsi</h2>
+
+                    <ul class="nav__ul">
+                        <li>
+                            <a href="#">Online</a>
+                        </li>
+
+                        <li>
+                            <a href="#">Print</a>
+                        </li>
+
+                        <li>
+                            <a href="#">Alternative Ads</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="nav__item">
+                    <h2 class="nav__title">Privacy</h2>
+
+                    <ul class="nav__ul">
+                        <li>
+                            <a href="#">Termini e Condizioni</a>
+                        </li>
+
+                        <li>
+                            <a href="#">Informazioni Legali</a>
+                        </li>
+
+                        <li>
+                            <a href="#">Contratto di sottoscrizione a Steam</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="nav__item">
+                    <h2 class="nav__title">Impieghi</h2>
+
+                    <ul class="nav__ul">
+                        <li>
+                            <a href="#">Game Designer</a>
+                        </li>
+
+                        <li>
+                            <a href="#">Software Engineer</a>
+                        </li>
+
+                        <li>
+                            <a href="#">Finanza</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="nav__item">
+                    <h2 class="nav__title">Contattaci</h2>
+
+                    <ul class="nav__ul">
+                        <li>
+                            <a href="#">Email</a>
+                        </li>
+
+                        <li>
+                            <a href="#">Telefono</a>
+                        </li>
+
+                        <li>
+                            <a href="#">Steam <img
+                                    src="https://store.akamai.steamstatic.com/public/images/ico/ico_twitter.png"></a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </footer>
+    </div>
+
 </body>
+
 </html>
