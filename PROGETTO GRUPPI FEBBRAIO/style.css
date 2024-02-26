@@ -289,12 +289,81 @@ body {
   );
 }
 
+.card {
+  box-shadow: 1px 1px 4px rgb(163, 163, 163);
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 350px;
+  height: 350px;
+  background: black;
+  border-radius: 25px;
+  display: block;
+  margin: 0 40px;
+  transition: all 400ms cubic-bezier(.215, .61, .355, 1);
+}
+
+.card .but-buy{
+  display: block;
+  position: relative;
+  top: 100px;
+  margin: 0 auto;
+}
+
+.card:hover {
+  transform: scale(1.015);
+  box-shadow: 1px 1px 15px rgb(163, 163, 163);
+}
+
+.card_uptitle {
+  width: fit-content;
+  font-size: 14px;
+  position: relative;
+  top: 30px;
+  left: 30px;
+}
+
+.card_title {
+  width: fit-content;
+  font-size: 30px;
+  font-weight: 600;
+  position: relative;
+  top: 40px;
+  left: 30px;
+}
+
+.card_uptitle::before{
+  content: "";
+  display: block;
+  position: absolute;
+  top: 92%; right: 0; bottom: 0; left: 0;
+  background-color: black;
+  transition: transform 800ms cubic-bezier(.215, .61, .355, 1);
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  height: 2px;
+}
+
+.card:hover .card_uptitle::before
+{
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.card_text {
+  width: fit-content;
+  font-size: 18px;
+  position: relative;
+  top: 50px;
+  left: 30px;
+}
+
 .but-buy {
   width: 160px;
   font-size: 16px;
   font-weight: 600;
-  color: white;
-  background-color: #0071e3;
+  background-color: rgb(238, 238, 238);
   cursor: pointer;
   padding: 10px;
   margin-bottom: 20px;
@@ -309,7 +378,7 @@ body {
 }
 
 .but-buy:hover {
-  background-color: #0097dd;
+  background-color: white;
   -o-transition: all .2s ease-in-out;
   -webkit-transition: all .2s ease-in-out;
   transition: all .2s ease-in-out;
@@ -662,7 +731,7 @@ input:valid {
 .hf2-back::before{
   background-image: url(immagini/hf2.jpg);
   background-position: bottom;
-  height: 85%;
+  height: 75%;
 }
 
 .fc-back::before{
@@ -692,13 +761,10 @@ input:valid {
 
 .prezzi {
   width: 100%;
-  padding-top: 4%;
-  padding-bottom: 4%;
-  /* display: block;
-  overflow: hidden;
-  height: 29.41176rem; */
-  color: black;
-  z-index: 7;
+  padding-top: 8%;
+  padding-bottom: 8%;
+  display: flex;
+  justify-content: center;
 }
 
 .prezzi td {
