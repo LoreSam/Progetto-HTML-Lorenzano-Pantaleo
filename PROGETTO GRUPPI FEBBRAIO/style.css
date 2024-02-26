@@ -619,13 +619,59 @@ input:valid {
 .stable {
   height: 100%;
   width: 100%;
-  background-color: black;
   padding-top: 4%;
   padding-bottom: 3%;
+  /* background-color: black; */
+}
+
+.stable::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 75%;
+  background-size: auto;
+  background-position:center;
+  background-repeat: no-repeat;
+  filter: blur(30px);
+  -webkit-filter: blur(30px);
+  z-index: -1;
+}
+
+.cod-back::before{
+  background-image: url(immagini/modern-warfare-3-2023-4k-wallpapers-v0-z29gb3up0q1c1.webp);
+  background-position: top;
+}
+
+.fh5-back::before{
+  background-image: url(immagini/fh5.jpg);
+  height: 80%;
+}
+
+.spi-back::before{
+  background-image: url(immagini/spi-back.jpg);
+  height: 80%;
+}
+
+.pal-back::before{
+  background-image: url(immagini/palw.jpg);
+  background-position: bottom;
+}
+
+.hf2-back::before{
+  background-image: url(immagini/hf2.jpg);
+  background-position: bottom;
+  height: 85%;
+}
+
+.fc-back::before{
+  background-image: url(immagini/fc-back.jpg);
 }
 
 .stable-tdh {
   padding: 8px;
+  width: auto;
 }
 
 .img-table {
@@ -634,27 +680,28 @@ input:valid {
 }
 
 .img-table td {
-  padding-left: 0.6em;
+  padding-left: 0px;
 }
 
 .img-table img {
   padding: 0;
   width: 11em;
   height: auto;
+  padding-left: 12.5px;
 }
 
 .prezzi {
   width: 100%;
   padding-top: 4%;
   padding-bottom: 4%;
+  /* display: block;
+  overflow: hidden;
+  height: 29.41176rem; */
   color: black;
+  z-index: 7;
 }
 
 .prezzi td {
-  /* background-image: linear-gradient(to right,
-          rgb(116, 141, 111), 
-          rgb(71, 83, 70),
-          rgb(58, 82, 58)); */
   border-radius: 20px;
   width: 40%;
   height: 250px;

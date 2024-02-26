@@ -1,45 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <title>Palworld</title>
+    <title>Palworld su Steam</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="immagini/steam.svg" type="favicon/svg"/>
+    <link rel="shortcut icon" href="immagini/steam icon.svg" type="favicon/svg" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <style>
-        .stable {
-            border-collapse: collapse;
-            color: black;
-            margin-top: 5%;
-        }
-
-        td, th {
-            padding: 8px;
-        }
-
-        .spaziamento{
-            border-collapse: separate;
-            border-spacing: 10px;
-        }
-
-        .prezzi{
-            background-color:darkgrey;
-            border-radius: 35px;
-            width: 300px; 
-            height: 280px;
-            
-        }
-
-        .but-prez{
-            vertical-align: bottom;
-        }
-
-        .requisiti{
-            color: black;
-            text-align: left;
-        }
-    </style>
+    <link href="infopage/css/motiva_sans.css" rel="stylesheet" type="text/css">
 </head>
+
 <body>
     <header class="nav-head">
         <nav>
@@ -48,58 +18,69 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="giochi.html">Negozio</a></li>
                 <li><a href="community.html">Community</a></li>
-                <li><a href="infopage/info.html">Informazioni</a></li>
-                <li class="person-icon"><a href="loginpage/login.html"><i class="fa fa-user-circle-o"></i></a></li> <!-- da sistemare perchè pagina incompleta -->
+                <li><a href="infopage/info.html">Installa Steam</a></li>
+                <li class="person-icon"><a href="loginpage/login.html"><i class="fa fa-user-circle-o"></i></a></li>
+                <!-- da sistemare perchè pagina incompleta -->
             </ul>
         </nav>
     </header>
 
-    <div class="centro">
-        <table class="stable">
-            <tr>
-                <td rowspan="3"><iframe width="560" height="315" src="https://www.youtube.com/embed/ZPu9yAOEYkQ?si=yF2IL5xglZbYXJzz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></td>
-                <td><img src="immagini/palw1.jpg" width="400"></td>
+    <div class="stable centro pal-back">
+        <h1>Palworld</h1>
+        <table>
+            <tr class="stable-tdh">
+                <td class="stable-tdh" rowspan="2">
+                    <video controls autoplay loop muted src="immagini/palvid1.webm" width="560" height="315"></video>
+                </td>
+                <td class="stable-tdh"><img src="immagini/palw1.jpg" width="400"></td>
             </tr>
-            <tr>
-                <td>
+            <tr class="stable-tdh">
+                <td class="stable-tdh">
                     Cattura le misteriose creature di questo vasto mondo note come Pal,<br>
                     e usale per combattere, edificare e coltivare i campi!<br>
-                    Puoi persino farle lavorare in fabbrica! Una nuova esperienza multiplayer open world,<br>
+                    Puoi persino farle lavorare in fabbrica! <br>Una nuova esperienza multiplayer open world,<br>
                     con elementi di survival e produzione oggetti.
                 </td>
             </tr>
-            <tr>
-                <td>
+            <tr class="stable-tdh">
+                <td class="stable-tdh">
+                    <table class="img-table">
+                        <tr>
+                            <td><img src="immagini/palimg1.jpg"></td>
+                            <td><img src="immagini/palimg2.jpg"></td>
+                            <td><img src="immagini/palimg3.jpg"></td>
+                        </tr>
+                    </table>
+                </td>
+                <td class="stable-tdh">
                     <ul align="left">
-                        <li>TUTTE LE VALUTAZIONI: Molto positiva (187,031)</li>
-                        <li>DATA DI RILASCIO: 19 gen 2024</li>
-                        <li>SVILUPPATORE: Pocketpair</li>
+                        <li><u>TUTTE LE VALUTAZIONI</u>: Molto positiva (187,031)</li>
+                        <li><u>DATA DI RILASCIO</u>: 19 gen 2024</li>
+                        <li><u>SVILUPPATORE</u>: Pocketpair</li>
                     </ul>
                 </td>
             </tr>
         </table>
     </div>
 
-<br><br><br><br><br><br><br>
-
-    <div class="centro spaziamento">
-        <table >
+    <div class="prezzi spaziamento">
+        <table>
             <tr>
-                <td class="prezzi">
+                <td>
                     <h2>Acquista Palworld</h2>
-                    <button class="but-home pal">
+                    <button class="but-buy">
                         <div>€29,99</div>
                     </button>
                 </td>
-                <td class="prezzi">
+                <td>
                     <h2>Acquista Palworld + Battle Sound Track</h2>
-                    <button class="but-home pal">
+                    <button class="but-buy">
                         <div>€34,99</div>
                     </button>
                 </td>
-                <td class="prezzi">
+                <td>
                     <h2>Acquista DLC</h2>
-                    <button class="but-home pal">
+                    <button class="but-buy">
                         <div>€5,49</div>
                     </button>
                 </td>
@@ -107,43 +88,129 @@
             </tr>
         </table>
     </div>
-
-<br><br><br><br><br><br><br>
     
     <div class="requisiti centro">
         <table>
             <thead>
-                <h2>REQUISITI DI SISTEMA</h2>
+                <h1>REQUISITI DI SISTEMA</h1>
             </thead>
             <tr>
                 <td>
-                    <h3>Minimi:</h3>
+                    <h2>Minimi:</h2>
                     Richiede un processore e un sistema operativo a 64 bit<br>
-                    <b>Sistema operativo</b>: Windows 10 or later (64-Bit)<br>
-                    <b>Processore</b>: i5-3570K 3.4 GHz 4 Core<br>
-                    <b>Memoria</b>: 16 GB di RAM<br>
-                    <b>Scheda video</b>: GeForce GTX 1050 (2GB)<br>
-                    <b>DirectX</b>: Versione 11<br>
-                    <b>Rete</b>: Connessione internet a banda larga<br>
-                    <b>Memoria</b>: 40 GB di spazio disponibile<br>
-                    <b>Note aggiuntive</b>: Internet connection required for multiplayer.<br> 
-                    <b>SSD required.</b>
+                    <u>Sistema operativo</u>: Windows 10 or later (64-Bit)<br>
+                    <u>Processore</u>: i5-3570K 3.4 GHz 4 Core<br>
+                    <u>Memoria</u>: 16 GB di RAM<br>
+                    <u>Scheda video</u>: GeForce GTX 1050 (2GB)<br>
+                    <u>DirectX</u>: Versione 11<br>
+                    <u>Rete</u>: Connessione internet a banda larga<br>
+                    <u>Memoria</u>: 40 GB di spazio disponibile<br>
+                    <u>Note aggiuntive</u>: Internet connection required for multiplayer.<br> 
+                    <u>SSD required.</u>
                 </td>
                 <td>
-                    <h3>Consigliati:</h3>
+                    <h2>Consigliati:</h2>
                     Richiede un processore e un sistema operativo a 64 bit<br>
-                    <b>Sistema operativo</b>: Windows 10 or later (64-Bit)<br>
-                    <b>Processore</b>: i9-9900K 3.6 GHz 8 Core<br>
-                    <b>Memoria</b>: 32 GB di RAM<br>
-                    <b>Scheda video</b>: GeForce RTX 2070<br>
-                    <b>DirectX</b>: Versione 11<br>
-                    <b>Rete</b>: Connessione internet a banda larga<br>
-                    <b>Memoria</b>: 40 GB di spazio disponibile<br>
-                    <b>Note aggiuntive</b>: Internet connection required for multiplayer.<br> 
-                    <b>SSD required.</b>
+                    <u>Sistema operativo</u>: Windows 10 or later (64-Bit)<br>
+                    <u>Processore</u>: i9-9900K 3.6 GHz 8 Core<br>
+                    <u>Memoria</u>: 32 GB di RAM<br>
+                    <u>Scheda video</u>: GeForce RTX 2070<br>
+                    <u>DirectX</u>: Versione 11<br>
+                    <u>Rete</u>: Connessione internet a banda larga<br>
+                    <u>Memoria</u>: 40 GB di spazio disponibile<br>
+                    <u>Note aggiuntive</u>: Internet connection required for multiplayer.<br> 
+                    <u>SSD required.</u>
                 </td>
             </tr>
         </table>
+    </div>
+    <div>
+        <footer class="footer">
+            <div class="footer__addr">
+                <h1 class="footer__logo">Steam®</h1>
+                <p>
+                    <h8>© 2024 Valve Corporation. Tutti i diritti riservati. <br>Tutti i marchi appartengono ai
+                        rispettivi proprietari negli Stati Uniti e negli altri paesi.
+                        <br>IVA inclusa nel prezzo (ove applicabile)
+                    </h8>
+                </p>
+            </div>
+
+            <ul class="footer__nav">
+                <li class="nav__item">
+                    <h2 class="nav__title">Rimborsi</h2>
+
+                    <ul class="nav__ul">
+                        <li>
+                            <a href="#">Online</a>
+                        </li>
+
+                        <li>
+                            <a href="#">Print</a>
+                        </li>
+
+                        <li>
+                            <a href="#">Alternative Ads</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="nav__item">
+                    <h2 class="nav__title">Privacy</h2>
+
+                    <ul class="nav__ul">
+                        <li>
+                            <a href="#">Termini e Condizioni</a>
+                        </li>
+
+                        <li>
+                            <a href="#">Informazioni Legali</a>
+                        </li>
+
+                        <li>
+                            <a href="#">Contratto di sottoscrizione a Steam</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="nav__item">
+                    <h2 class="nav__title">Impieghi</h2>
+
+                    <ul class="nav__ul">
+                        <li>
+                            <a href="#">Game Designer</a>
+                        </li>
+
+                        <li>
+                            <a href="#">Software Engineer</a>
+                        </li>
+
+                        <li>
+                            <a href="#">Finanza</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="nav__item">
+                    <h2 class="nav__title">Contattaci</h2>
+
+                    <ul class="nav__ul">
+                        <li>
+                            <a href="#">Email</a>
+                        </li>
+
+                        <li>
+                            <a href="#">Telefono</a>
+                        </li>
+
+                        <li>
+                            <a href="#">Steam <img
+                                    src="https://store.akamai.steamstatic.com/public/images/ico/ico_twitter.png"></a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </footer>
     </div>
     
 </body>
