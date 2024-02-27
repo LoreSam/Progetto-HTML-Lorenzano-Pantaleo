@@ -774,6 +774,14 @@ input:valid {
   justify-content: center;
 }
 
+.prezzi-shop {
+  width: 100%;
+  padding-top: 4%;
+  padding-bottom: 2%;
+  display: flex;
+  justify-content: center;
+}
+
 .prezzi td {
   border-radius: 20px;
   width: 40%;
